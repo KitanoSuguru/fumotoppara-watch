@@ -2,7 +2,7 @@ name: fumotoppara-watch
 
 on:
   schedule:
-    - cron: "*/15 * * * *"   # 15分おき（GitHub側で数分遅れることあり）
+    - cron: "7,22,37,52 * * * *"   # 15分おき。混雑する毎時0分を避けてずらしている（GitHub側で数分遅れることあり）
   workflow_dispatch:
 
 permissions:
